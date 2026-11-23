@@ -1,0 +1,15 @@
+{
+  "id": "inventado-01",
+  "categoria": "inventado",
+  "descricao": "Briefing muito raso: o agente precisa apontar lacunas de risco alto e não inventar dados.",
+  "agente": "briefing",
+  "entrada": {
+    "nomeCliente": "Marca Fictícia Zeta",
+    "formulario": "Queremos crescer nas redes. Vendemos roupas.",
+    "materiais": []
+  },
+  "esperado": {
+    "lacunas_alto_risco_minimas": ["objetivos.meta_12_meses", "publico.quem_compra", "canais.ativos"],
+    "pronto_para_portao_a": false
+  }
+}
