@@ -14,7 +14,7 @@ Plataforma multicliente de agentes de marketing da **AX Marketing**. Cada client
 - **Custo mínimo**: modelo barato por padrão (forte só no Estrategista e no Avaliador), prompt em camadas com cache, lote para o que não é tempo real.
 - **Humano nos portões**: o sistema para e espera a Laura aprovar briefing (Portão A) e diagnóstico (Portão B).
 
-Documento completo: [docs/arquitetura.md](docs/arquitetura.md).
+Documento completo: [docs/arquitetura.md](docs/arquitetura.md). Contas e categorias: [docs/decisoes/0002](docs/decisoes/0002-contas-categorias-e-analises.md).
 
 ## Estrutura
 
@@ -33,6 +33,8 @@ src/
       metricas.ts            indicadores de funil calculados em código
       briefing/ analista-*/ consolidador/ avaliador/   um prompt.md versionado por agente
       cli.ts                 roda a fase 1 a partir de um JSON
+  estrategia/
+    catalogo.ts              6 categorias estratégicas, subcategorias, briefing dinâmico e entregas
   coletores/                 (fase seguinte) leitura de redes, site e mídia, só leitura
 conhecimento/
   metodo-ax/                 camada 1: Método AX global
