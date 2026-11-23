@@ -123,6 +123,7 @@ export const Recomendacao = z.object({
   esforco: z.enum(["baixo", "medio", "alto"]),
   impacto_esperado: z.enum(["baixo", "medio", "alto"]),
   prazo: z.enum(["30_dias", "90_dias", "6_meses"]),
+  metrica_de_sucesso: z.string().describe("Como saber que a recomendação funcionou"),
 });
 
 export const RelatorioDiagnostico = z.object({

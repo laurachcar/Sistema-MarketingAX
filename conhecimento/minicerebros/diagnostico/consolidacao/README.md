@@ -8,3 +8,7 @@ Pacote de conhecimento lido pelo agente correspondente. Precisa de três tipos d
 
 Fonte no ClickUp: ver a tabela "Minicérebro de diagnóstico" no doc de arquitetura.
 O Sincronizador (fase 2 da infra) vai trazer o conteúdo do ClickUp para cá / para o pgvector automaticamente.
+
+## Estado (v0.1, 2026-11-23)
+- `regras.md`: extraído dos planos de marketing 2025 e 2026–2027 e do Plano Diretor B2B da Laura (um único cliente, setor de saúde B2B/B2G).
+- Exemplos: `../exemplos/` (1 caso anonimizado, compartilhado pelas quatro áreas). Faltam exemplos de outros setores, como os clientes B2C, para o método não ficar enviesado para saúde.
