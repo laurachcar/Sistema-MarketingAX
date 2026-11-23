@@ -15,7 +15,10 @@ function arquivos(dir: string): string[] {
 describe("conhecimento do minicérebro", () => {
   it("exemplos e regras não carregam identificadores de cliente (anonimização)", () => {
     const proibidos = [
-      /biom[eé]dica/i, // nome do cliente de origem dos exemplos
+      /biom[eé]dica/i, // nomes dos clientes de origem dos exemplos
+      /\bmula\b/i,
+      /paschoa|motta/i,
+      /contabilizei|agilize|contaj[aá]/i, // concorrentes nomeados nos planos originais
       /\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}/, // CNPJ
       /\d{3}\.\d{3}\.\d{3}-\d{2}/, // CPF
       /\(?\d{2}\)?\s?9?\d{4}-\d{4}/, // telefone
@@ -35,5 +38,6 @@ describe("conhecimento do minicérebro", () => {
     }
     expect(d.avaliador.prompt.texto).toContain("Rubrica do Diagnóstico AX");
     expect(d["analista-mercado"].prompt.texto).toContain("<exemplo");
+    expect(d["analista-mercado"].prompt.texto.match(/<exemplo /g)).toHaveLength(3);
   });
 });

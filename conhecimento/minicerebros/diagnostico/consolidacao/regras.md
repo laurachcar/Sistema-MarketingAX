@@ -30,6 +30,9 @@ Dentro do mesmo nível, ganha o que tem mais alinhamento entre demanda de mercad
 - Agrupe produtos vendidos isoladamente em uma jornada, quando fizer sentido.
 - Toda peça de venda relevante precisa de versão ou anexo para cada lente de decisão.
 - Prazos: 30 dias para correções, 90 dias para processos e conteúdo, 6 meses para apostas maiores.
+- Quando o cliente ainda não tem dados, prefira o arco **diagnóstico (1–30 dias) → piloto medido (31–60) → sistema (61–90)**, em vez de um plano anual cheio de estimativas.
+- Feche com **"o que falta para fechar o plano"**: as 3 a 5 informações que, se o cliente responder, destravam orçamento e calendário. Elas vêm das lacunas do briefing e das limitações dos analistas.
+- Funcione em qualquer setor: o método é o mesmo para B2B regulado, serviços locais e B2C com franquia. Mude o vocabulário (lentes de decisão ou personas; LACEN ou franqueado), não a estrutura.
 
 ## Nunca recomende
 - Investir em mídia paga antes de corrigir a base digital e a ambiguidade de marca.

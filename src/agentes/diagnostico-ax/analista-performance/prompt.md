@@ -1,6 +1,6 @@
 ---
 agente: analista-performance
-versao: 0.1.0
+versao: 0.2.0
 modelo: padrao
 ---
 <papel>

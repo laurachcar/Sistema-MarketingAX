@@ -5,6 +5,8 @@ Fonte: método aplicado pela Laura nos planos de marketing de um cliente de diag
 ## 1. Públicos separados
 - Identifique os públicos distintos do cliente (ex.: empresas privadas, instituições de pesquisa, governo). Para cada um: perfil, necessidades e dores, o que valoriza, por que compra.
 - Erro comum a apontar: tratar públicos diferentes com a mesma mensagem.
+- **Problema técnico vs. problema real:** separe o que o cliente diz que compra (técnico) do que ele de fato quer resolver (emocional). A marca deve vender o segundo.
+- Em B2C e serviços para pessoa física, use **personas** com dor, gatilho de compra, objeção e canal, no lugar das duas lentes.
 
 ## 2. Duas lentes de decisão (venda complexa)
 - Em vendas B2B/B2G complexas há um grupo de decisão com dois perfis de critérios opostos. Para cada lente, registre: o que prioriza, a pergunta que faz, o conteúdo que convence e o canal preferido.
@@ -24,6 +26,8 @@ Verifique e registre com a fonte (URL) de cada achado:
 - **Redes:** seguidores, volume de publicações, bio, consistência; canais existentes e subutilizados (ex.: YouTube sem volume).
 - **Busca pela marca:** homônimos e empresas com nome parecido competindo pelo mesmo termo; perfis duplicados.
 - Separe o que é **correção técnica sem custo** do que exige investimento.
+- **Negócio local:** o perfil de empresa no Google e as avaliações são a fundação, antes do site e da mídia. Registre nota, volume e respostas às avaliações.
+- **Coerência entre manifesto e operação:** a marca promete algo (ex.: loja pequena, atendimento imediato). Aponte onde a operação ou a comunicação contradiz a promessa, inclusive no vocabulário (ex.: chamar de "cafeteria" uma marca que se posiciona como "coffee shop").
 
 ## 5. Ambiguidade de marca
 - Se o nome do cliente é compartilhado com outras empresas, a recomendação é um qualificador obrigatório (nome + segmento ou nome + produto) em toda peça paga, título de SEO e legenda. Marca ambígua não deve ser base de campanha paga sem qualificador.

@@ -10,5 +10,5 @@ Fonte no ClickUp: ver a tabela "Minicérebro de diagnóstico" no doc de arquitet
 O Sincronizador (fase 2 da infra) vai trazer o conteúdo do ClickUp para cá / para o pgvector automaticamente.
 
 ## Estado (v0.1, 2026-11-23)
-- `regras.md`: extraído dos planos de marketing 2025 e 2026–2027 e do Plano Diretor B2B da Laura (um único cliente, setor de saúde B2B/B2G).
-- Exemplos: `../exemplos/` (1 caso anonimizado, compartilhado pelas quatro áreas). Faltam exemplos de outros setores, como os clientes B2C, para o método não ficar enviesado para saúde.
+- `regras.md`: extraído dos planos de marketing 2025 e 2026–2027 e do Plano Diretor B2B da Laura, mais o playbook de eventos de uma rede de cafeterias e o plano de um escritório contábil.
+- Exemplos: `../exemplos/` (3 casos anonimizados, compartilhados pelas quatro áreas): distribuidora de diagnóstico B2B/B2G, rede de cafeterias com franquia (B2C + B2B) e escritório contábil de serviços.

@@ -17,6 +17,8 @@ Fonte: método aplicado pela Laura nos planos de marketing de um cliente de diag
 - Monte a tabela **empresa | força central | fraqueza explorável pelo cliente**.
 - No benchmark de conteúdo, registre por concorrente: foco da estratégia, canais, temas, tom percebido e **oportunidade para o cliente**.
 - Feche com **"a lacuna que ninguém ocupa"**: 1 ou 2 aberturas de diferenciação que nenhum concorrente comunica de forma consistente.
+- Quando ajudar, desenhe um **mapa de posicionamento em quadrantes** (ex.: premium/commodity × humano/automatizado) e diga qual quadrante está vazio.
+- Um bloco de concorrentes de baixo custo ou de pior serviço pode virar o **"inimigo narrativo"**, a alternativa contra a qual a marca se define. Isso é diferente de atacar uma empresa nominalmente.
 
 ## 4. SWOT
 - Forças precisam ser ativos concretos e verificáveis (portfólio, presença regional, blog ativo), não adjetivos.
