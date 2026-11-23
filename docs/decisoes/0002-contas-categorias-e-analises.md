@@ -20,8 +20,14 @@ montados a partir das análises aprovadas, sem template fixo. O briefing precisa
   A chave estrangeira composta impede apontar para produto de outra conta.
 - **Aprovação é trava de banco.** Só membro da agência (JWT `ax_papel = membro`) muda uma análise ou entrega para `aprovada`, e uma
   análise aprovada não muda mais por agente. Uma entrega só pode citar análises aprovadas da mesma conta.
-- **Agentes ainda não definidos ficam `executor: null`.** Infraestrutura, Estratégia de lançamento e as três de Vendas esperam as
-  respostas de descoberta da Laura (caso de uso, volume, margem de erro, custo), como pede o CLAUDE.md.
+- **Cinco agentes novos** (respostas da Laura em 23/11/2026, ver `src/agentes/estrategia/`):
+  - `agente-infraestrutura` (padrão): lista agentes, POPs, procedimentos, playbooks e materiais de apoio que a estratégia exige e
+    aponta só as lacunas, sem orçamento nem fornecedor.
+  - `agente-lancamento` (forte, cerca de 4 por mês): adapta o modelo AX de lançamento ao produto, sempre com as 5 fases (aquecimento,
+    pré-lançamento, lançamento, sustentação, pós), checadas em código.
+  - Vendas em três agentes separados (padrão): `agente-key-accounts` (decisor só por cargo, nunca dado pessoal),
+    `agente-processos-vendas` (dados de planilhas e ferramentas, só leitura) e `agente-estrategias-venda` (preço e promoção sempre
+    como sugestão com aprovação comercial, checado em código).
 
 ## Consequências
 - O painel lê o catálogo do código para montar telas e formulários; não há tela para editar categorias.

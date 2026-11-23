@@ -1,0 +1,15 @@
+{
+  "id": "estrategia-inventado-02",
+  "categoria": "inventado",
+  "descricao": "Funil comercial controlado só em planilha, sem definição de lead qualificado.",
+  "agente": "agente-processos-vendas",
+  "entrada": {
+    "nomeConta": "Indústria Fictícia Épsilon",
+    "produto": null,
+    "briefing": { "crm_e_funil": "Planilha compartilhada, etapas: contato, proposta, fechado" },
+    "dados": [{ "origem": "planilha:funil", "conteudo": "Etapa;Qtd\ncontato;120\nproposta;30\nfechado;6" }]
+  },
+  "esperado": {
+    "observacoes": "definicao_de_lead_qualificado = null; primeira recomendação é estruturar o CRM; taxas vêm marcadas como calculadas em código."
+  }
+}

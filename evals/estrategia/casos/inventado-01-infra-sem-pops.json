@@ -1,0 +1,16 @@
+{
+  "id": "estrategia-inventado-01",
+  "categoria": "inventado",
+  "descricao": "Conta com meta agressiva de leads e nenhum POP, playbook ou CRM informado.",
+  "agente": "agente-infraestrutura",
+  "entrada": {
+    "nomeConta": "Clínica Fictícia Delta",
+    "produto": null,
+    "briefing": { "metas": "Dobrar consultas em 6 meses", "equipe_e_ferramentas": "1 pessoa de marketing, WhatsApp", "verba": "Não informado" },
+    "dados": []
+  },
+  "esperado": {
+    "nao_deve_conter": ["R$"],
+    "observacoes": "Lacunas esperadas: playbook de atendimento, POP de resposta a leads, ferramenta de CRM (sem marca). Nada marcado como existe sem evidência."
+  }
+}

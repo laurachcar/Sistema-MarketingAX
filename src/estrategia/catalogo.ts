@@ -10,7 +10,7 @@
  * banco grava com qual versão cada briefing e cada análise foram feitos.
  */
 
-export const CATALOGO_VERSAO = "1.0.0";
+export const CATALOGO_VERSAO = "1.1.0";
 
 export interface CampoBriefing {
   id: string;
@@ -24,6 +24,11 @@ export type Executor =
   | "analista-performance"
   | "estrategista"
   | "planejador-mensal"
+  | "agente-infraestrutura"
+  | "agente-lancamento"
+  | "agente-key-accounts"
+  | "agente-processos-vendas"
+  | "agente-estrategias-venda"
   | "codigo"
   | null;
 
@@ -121,7 +126,7 @@ export const CATEGORIAS: readonly Categoria[] = [
       sub({ id: "analise_de_concorrentes", nome: "Análise de concorrentes", entrega: "O que cada concorrente faz melhor e pior, preço, canais e posicionamento.", itens: [], porProduto: true, executor: "analista-mercado", campos: ["concorrentes"] }),
       sub({ id: "swot", nome: "SWOT", entrega: "Forças, fraquezas, oportunidades e ameaças, cada uma com fonte.", itens: [], porProduto: false, executor: "estrategista", campos: ["diferenciais"] }),
       sub({ id: "objetivos_estrategicos", nome: "Objetivos estratégicos", entrega: "Objetivos SMART de 3, 6 e 12 meses e o KPI de cada um.", itens: [], porProduto: false, executor: "estrategista", campos: ["metas", "como_mede_sucesso"] }),
-      sub({ id: "infraestrutura", nome: "Infraestrutura necessária", entrega: "Equipe, ferramentas e verba que a estratégia exige, contra o que existe hoje.", itens: [], porProduto: false, executor: null, campos: ["equipe_e_ferramentas", "verba"] }),
+      sub({ id: "infraestrutura", nome: "Infraestrutura necessária", entrega: "Agentes, POPs, procedimentos, playbooks e materiais de apoio que a estratégia exige, e as lacunas contra o que existe hoje.", itens: ["Agentes", "POPs", "Procedimentos", "Playbooks", "Materiais de apoio"], porProduto: false, executor: "agente-infraestrutura", campos: ["equipe_e_ferramentas", "verba"] }),
       sub({ id: "publico_alvo", nome: "Público-alvo detalhado", entrega: "ICP e personas: quem compra, quem decide, dores, objeções e onde estão.", itens: [], porProduto: true, executor: "analista-marca", campos: ["quem_compra", "dores_e_objecoes"] }),
     ],
   },
@@ -130,9 +135,9 @@ export const CATEGORIAS: readonly Categoria[] = [
     nome: "Vendas e comercial",
     descricao: "Como o marketing gera e ajuda a fechar oportunidades.",
     subcategorias: [
-      sub({ id: "key_accounts", nome: "Key accounts", entrega: "Contas-alvo, mapa de decisores e plano por conta (ABM).", itens: [], porProduto: false, executor: null, campos: ["contas_alvo", "ciclo_de_venda"] }),
-      sub({ id: "processos_de_vendas", nome: "Processos de vendas", entrega: "Funil comercial, passagem marketing → vendas e uso do CRM.", itens: [], porProduto: false, executor: null, campos: ["crm_e_funil"] }),
-      sub({ id: "estrategias_de_venda", nome: "Estratégias de venda", entrega: "Como a marca vende em cada etapa da jornada de compra.", itens: ["CX", "Jornada de compra", "Promoções", "Técnicas de venda", "Materiais de apoio", "Geração de leads"], porProduto: true, executor: null, campos: ["preco_e_promocoes", "dores_e_objecoes", "materiais_de_venda"] }),
+      sub({ id: "key_accounts", nome: "Key accounts", entrega: "Contas-alvo, mapa de decisores e plano por conta (ABM).", itens: [], porProduto: false, executor: "agente-key-accounts", campos: ["contas_alvo", "ciclo_de_venda"] }),
+      sub({ id: "processos_de_vendas", nome: "Processos de vendas", entrega: "Funil comercial, passagem marketing → vendas e uso do CRM.", itens: [], porProduto: false, executor: "agente-processos-vendas", campos: ["crm_e_funil"] }),
+      sub({ id: "estrategias_de_venda", nome: "Estratégias de venda", entrega: "Como a marca vende em cada etapa da jornada de compra.", itens: ["CX", "Jornada de compra", "Promoções", "Técnicas de venda", "Materiais de apoio", "Geração de leads"], porProduto: true, executor: "agente-estrategias-venda", campos: ["preco_e_promocoes", "dores_e_objecoes", "materiais_de_venda"] }),
     ],
   },
   {
@@ -142,7 +147,7 @@ export const CATEGORIAS: readonly Categoria[] = [
     subcategorias: [
       sub({ id: "analise_digital", nome: "Análise digital do negócio", entrega: "Auditoria de redes, site, SEO/GEO e mídia paga, só leitura.", itens: [], porProduto: false, executor: "analista-performance", campos: ["site", "instagram", "acessos_leitura"] }),
       sub({ id: "cronograma", nome: "Cronograma de marketing e ações", entrega: "Calendário de 12 meses com ações, datas, responsáveis e metas.", itens: [], porProduto: false, executor: "planejador-mensal", campos: ["sazonalidade"] }),
-      sub({ id: "estrategia_de_lancamento", nome: "Estratégia de lançamento", entrega: "Plano de lançamento por produto ou serviço: fases, canais e metas.", itens: [], porProduto: true, executor: null, campos: ["lancamentos"] }),
+      sub({ id: "estrategia_de_lancamento", nome: "Estratégia de lançamento", entrega: "Modelo AX de lançamento adaptado ao produto ou serviço, com as cinco fases.", itens: ["Aquecimento de mercado", "Pré-lançamento", "Lançamento", "Sustentação", "Pós-lançamento"], porProduto: true, executor: "agente-lancamento", campos: ["lancamentos"] }),
       sub({ id: "plano_de_comunicacao", nome: "Plano de comunicação", entrega: "Mensagens, tom e frequência por público e por canal.", itens: [], porProduto: false, executor: "estrategista", campos: ["publicos_e_nichos", "tom_de_voz"] }),
       sub({ id: "canais", nome: "Canais", entrega: "Papel de cada canal na jornada e onde investir esforço.", itens: [], porProduto: false, executor: "analista-performance", campos: ["canais_atuais"] }),
     ],
