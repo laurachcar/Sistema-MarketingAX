@@ -2,7 +2,7 @@
 
 Plataforma multicliente de agentes de marketing da **AX Marketing**. Cada cliente tem conta, briefing, análises, aprovações e agentes executores, e cada tipo de ação tem um *minicérebro* com o método da AX que aprende com as aprovações.
 
-> Estado: **piloto Diagnóstico AX, esqueleto v0.1**. Os prompts dos analistas e a rubrica ainda esperam o conhecimento da Laura (etapas 1 e 2 do plano).
+> Estado: **piloto Diagnóstico AX v0.1**. Todos os agentes têm prompt e regras, extraídos dos planos de marketing da Laura. A rubrica v0.1 ainda precisa ser validada por ela, e falta exemplo de cliente de outro setor.
 
 ## Princípios de arquitetura
 
@@ -63,9 +63,9 @@ Banco: `supabase db reset` aplica a migração e `supabase test db` roda o teste
 
 ## Próximos passos do piloto
 
-1. Laura: marcar no ClickUp os tópicos "pronto para o cérebro" e separar 3 a 5 diagnósticos antigos.
-2. Laura + Claude: rubrica do diagnóstico (6 a 10 critérios com peso).
-3. Preencher os prompts dos analistas e do consolidador com os pacotes de conhecimento.
+1. Laura: validar a rubrica (`conhecimento/minicerebros/diagnostico/consolidacao/rubrica.md`) dando nota a um diagnóstico antigo.
+2. Laura: enviar 1 ou 2 diagnósticos de clientes de outros setores (ex.: o Mula) para virar exemplo anonimizado.
+3. Laura + Claude: marcar no ClickUp os tópicos "pronto para o cérebro".
 4. Completar os 10 casos de eval e o executor de evals.
 5. Coletor de redes do Mula (só leitura) e persistência no Supabase.
 6. Rodar no Mula e comparar com o diagnóstico manual.

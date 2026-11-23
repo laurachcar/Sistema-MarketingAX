@@ -22,7 +22,7 @@ const relatorio = (comFonte = true): TRelatorioDiagnostico => ({
   mercado: parcial("mercado"),
   marca: parcial("marca"),
   performance: parcial("performance"),
-  recomendacoes: [{ prioridade: 1, acao: "a", esforco: "baixo", impacto_esperado: "alto", prazo: "30_dias", porque: [{ texto: "porque sim", fontes: comFonte ? ["F1"] : [], natureza: "fato" }] }],
+  recomendacoes: [{ prioridade: 1, acao: "a", esforco: "baixo", impacto_esperado: "alto", prazo: "30_dias", metrica_de_sucesso: "m", porque: [{ texto: "porque sim", fontes: comFonte ? ["F1"] : [], natureza: "fato" }] }],
   lacunas_que_limitam: [],
   fontes: [],
 });
