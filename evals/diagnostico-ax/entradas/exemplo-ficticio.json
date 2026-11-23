@@ -1,0 +1,9 @@
+{
+  "tenantId": "00000000-0000-4000-8000-000000000001",
+  "clientId": "00000000-0000-4000-8000-0000000000c1",
+  "nomeCliente": "Café Serra Alta (fictício)",
+  "formulario": "Negócio: torrefação de cafés especiais, vende online (B2C) e para cafeterias (B2B). Ticket médio online R$ 89. Região: Sul de Minas, entrega Brasil todo.\nObjetivo 12 meses: dobrar vendas online.\nPúblico: pessoas de 25 a 45 anos que fazem café em casa.\nConcorrentes: Café Exemplo A, Café Exemplo B.\nCanais: Instagram @cafeserraalta_ficticio, loja virtual.\nVerba de mídia: R$ 3 mil/mês.\nTom: próximo e técnico ao mesmo tempo.",
+  "materiais": [
+    { "origem": "apresentacao_institucional.pdf (resumo)", "conteudo": "Fazenda familiar desde 1987, cafés 84+ pontos SCA, prêmio regional 2024." }
+  ]
+}
